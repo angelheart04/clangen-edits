@@ -1154,5 +1154,40 @@
         }
       }
     ]
-  }
+  },
+     {
+        "patrol_id": "gen_crowcryptid",
+        "biome": ["Any"],
+        "season": ["Any"],
+        "types": ["hunting"],
+        "tags": ["halloween"],
+        "patrol_art": ,
+        "min_cats": 2,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "Your patrol chatters at the birds above them, laughing about how the birds dance about on the branches.",
+        "decline_text": "r_c snaps at the patrol to focus, rather than slacking off.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "The birds fall suspiciously quiet, before the echoes of a thousand cats rain down from a black-winged sky. The patrol falls silent, taking in the massive flock that descends upon the trees in flashing beak.",
+                "exp": 20,
+                "weight": 20,
+            },
+            {
+                "text": "r_c's already halfway up a tree when a crow laughs - laughs! - in {PRONOUN/r_c/poss} face. The laugh is rattled and croaky, but still distinctly feline. r_c lunges, and the crow is too slow for {PRONOUN/r_c/poss} ire.",
+                "exp": 20,
+                "weight": 5,
+                "prey": ["medium"]
+            },
+        ],
+        "fail_outcomes": [
+            {
+                "text": "The birds fall suspiciously quiet, before the echoes of a thousand cats rain down from a black-winged sky. r_c's fur stands on end, before {PRONOUN/r_c/subject} {VERB/r_c/turn/turns} and runs to camp, muttering about the Dark Forest.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    }
 ]
